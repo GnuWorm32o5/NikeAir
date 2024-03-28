@@ -22,7 +22,7 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
 }
-
+/* Navbar start */
 header {
  position: fixed;
  top: 0;
@@ -79,7 +79,7 @@ header {
     margin: 0 0.5rem;
     border-radius: 10px;
     font-size: 1.5rem;
-    transition: all .5s ease;
+    transition: all .4s ease;
 }
 
 .nav-right i:hover {
@@ -110,3 +110,143 @@ header {
     background: var(--second-color);
     color: var(--text-color);
 }
+
+/* Navbar end */
+/* Every Section */
+
+section {
+    padding: 0 15%;
+    
+}
+
+/* EverySection End */
+/* Landing Page */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(../img/bg.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.hero-img img {
+    width: 750px;
+    height: 700px;
+    object-fit: contain;
+}
+
+.hero-text h1 {
+    font-size: var(--h1-font);
+    line-height: 1.1;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.hero-text p {
+    width: 100%;
+    max-width: 30rem;
+    font-size: var(--p-font);
+    color: var(--other-color);
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.hero-text h5 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding:  1rem 2rem;
+    color: var(--text-color);
+    background:var(--main-color);
+    font-size: 1rem;
+    border-radius: 0.8rem;
+    margin-right: 1.5rem;
+    transition: all 1s ease;
+}
+
+.btn:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.btn2 {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--other-color);
+    border-bottom: 2px solid transparent;
+    transition: all .4s ease;
+}
+
+.btn2:hover {
+    border-bottom: 2px solid var(--text-color);
+    color: var(--text-color);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.content li img {
+    height: auto;
+    max-width: 100%;
+}
+
+.box {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.box:hover {
+    border: 1px solid var(--main-color);
+    transform: scale(2);
+    box-shadow: white 0px 0px 5px 1px;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 4rem;
+    right: 9%;
+    font-size: 1.5rem;
+    color: var(--other-color);
+}
+
+.scroll i {
+    font-size: 20px;
+    color: var(--text-color);
+    background: var(--main-color);
+    padding: 18px;
+    border-radius: 2rem;
+    transition: all .4s ease;
+}
+
+.scroll i:hover {
+    background-color: var(--text-color);
+    outline-color: var(--bg-color);
+}
+
